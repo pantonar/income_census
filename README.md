@@ -1,6 +1,6 @@
 # Analysis of the income pattern in US census data
 
-Full Analysis : [Jupyter Notebook](https://github.com/pantonar/income_census/blob/main/Technical%20assessment.ipynb)
+Full Analysis : [Notebook](https://github.com/pantonar/income_census/blob/main/Technical%20assessment.ipynb)
 
 ## Exploratory analysis
 ## Data preparation
