@@ -27,7 +27,7 @@ I train 5 different models. For each of them, I undertake a hyperparameter searc
 * Logistic regression:
   * L2 penalty with regularisation weight of 1
 * K-Nearest Neighbours:
- * based on the 5 neareast neighbours with uniform weights
+  * based on the 5 neareast neighbours with uniform weights
 * Neural Network:
   * Logitic activation function and 4 hidden layers of sizes (20, 10, 5, 2)
 ### Performance Analysis
