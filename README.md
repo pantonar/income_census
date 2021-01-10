@@ -19,6 +19,13 @@ The purpose of this analysis is to identify the charactersitics associated with 
 * correlation > 0.05
 
 ## Models
+I train 5 different models. For each of them, I undertake a hyperparameter search:
+* Random Forest:
+  * reefg
+* Adaboost
+* Logistic regression
+* K-Nearest Neighbours
+* Neural Network
 ### Performance Analysis
 ![](/png/metrics_table.png?raw=true)
 ### ROC Curve of Top 5 Models
