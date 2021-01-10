@@ -19,14 +19,23 @@ The purpose of this analysis is to identify the charactersitics associated with 
 * correlation > 0.05
 
 ## Models
-I train 5 different models. For each of them, I undertake a hyperparameter search:
-* Random Forest:
-  * reefg
-* Adaboost
-* Logistic regression
-* K-Nearest Neighbours
-* Neural Network
+I train 5 different models. For each of them, I undertake a hyperparameter search, and detail below the best performing parameters on the CV set (20% of the train set):
+* Random Forest: 
+  * the best parameters are: a forest of 300 trees with maximal depth 50, all features included in split operatedd in 20% of the sample
+* Adaboost:
+ * 500 estimators
+* Logistic regression:
+ * L2 penalty with regularisation weight of 1
+* K-Nearest Neighbours:
+ * based on the 5 neareast neighbours with uniform weights
+* Neural Network:
+ * Logitic activation function and 4 hidden layers of sizes (20, 10, 5, 2)
 ### Performance Analysis
+The Random Forest model is the best able to estimate the individual's income category. It outperforms all other competing models, with an overal accuracy of 95.6% on the test set, and error rate of 4.4%.
+
+
 ![](/png/metrics_table.png?raw=true)
 ### ROC Curve of Top 5 Models
 ![](/png/roc.png?raw=true)
+
+## Challenges and future developments
