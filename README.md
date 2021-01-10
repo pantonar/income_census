@@ -33,9 +33,21 @@ I train 5 different models. For each of them, I undertake a hyperparameter searc
 ### Performance Analysis
 The Random Forest model is the best able to estimate the individual's income category. It outperforms all other competing models, with an overal accuracy of 95.6% on the test set, and error rate of 4.4%.
 
+On all models though, recall is 50%, while precision around 80%. That implies that many high income indiciduals are missed (low recall), yet of those identified as high income by our model, we can be pretty confident they have been correctly labelled (high precision)
 
 ![](/png/metrics_table.png?raw=true)
 ### ROC Curve of Top 5 Models
 ![](/png/roc.png?raw=true)
 
-## Challenges and future developments
+## Future developments
+Some of the challenges:
+* highly imbalanced data
+* slow training as quite large sample
+* low recall
+
+To improve the models further, we should devote additional time to:
+* feature selection (lasso regression, PCA, features crosses)
+* feature engineering (crafting features that could be correlated to incom like age^2)
+* balance dataset to improve fit
+* batch training to speed up model training
+
